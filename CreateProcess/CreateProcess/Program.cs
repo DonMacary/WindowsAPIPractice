@@ -5,6 +5,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
+using DInvoke.DynamicInvoke;
+
 namespace CreateProcess
 {
     internal class Program
@@ -49,8 +51,8 @@ namespace CreateProcess
             public bool bInheritHandle;
         }
 
-        [DllImport("kernel32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
-        static extern bool CreateProcessW(string lpApplicationName, string lpCommandLine, ref SECURITY_ATTRIBUTES lpProcessAttributes,
+        [UnmanagedFunctionPointer(CallingConvention.StdCall, CharSet = CharSet.Unicode)]
+        delegate int CreateProcessW(string lpApplicationName, string lpCommandLine, ref SECURITY_ATTRIBUTES lpProcessAttributes,
            ref SECURITY_ATTRIBUTES lpThreadAttributes, bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment,
            string lpCurrentDirectory, ref STARTUPINFO lpStartupInfo, out PROCESS_INFORMATION lpProcessInformation);
 
@@ -67,22 +69,24 @@ namespace CreateProcess
 
             var pi = new PROCESS_INFORMATION();
 
-            var success = CreateProcessW(
-                "C:\\Windows\\System32\\notepad.exe",
-                null,
-                ref pa,
-                ref ta,
-                false,
-                0,
-                IntPtr.Zero,
-                "C:\\Windows\\System32",
-                ref si,
-                out pi);
+            object[] parameters = {
+                "C:\\Windows\\System32\\calc.exe", null, pa, ta, false, (uint)0, IntPtr.Zero,
+                "C:\\Windows\\System32", si, pi
+            };
 
+            // var success = (bool)Generic.DynamicAPIInvoke("kernel32.dll", "CreateProcessW", typeof(CreateProcessW), ref parameters);
+            Generic.DynamicAPIInvoke("kernel32.dll", "CreateProcessW", typeof(CreateProcessW), ref parameters);
+            /*
             if (success)
+            {
+                pi = (PROCESS_INFORMATION)parameters[9];
                 Console.WriteLine("Process created with PID: {0}.", pi.dwProcessId);
+            }
             else
+            {
                 Console.WriteLine("Failed to create process. Error code: {0}.", Marshal.GetLastWin32Error());
+            }
+            */
         }
     }
 }

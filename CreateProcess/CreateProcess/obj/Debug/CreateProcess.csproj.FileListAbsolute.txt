@@ -6,3 +6,5 @@ C:\Dev\WindowsAPIPractice\CreateProcess\CreateProcess\obj\Debug\CreateProcess.cs
 C:\Dev\WindowsAPIPractice\CreateProcess\CreateProcess\obj\Debug\CreateProcess.csproj.CoreCompileInputs.cache
 C:\Dev\WindowsAPIPractice\CreateProcess\CreateProcess\obj\Debug\CreateProcess.exe
 C:\Dev\WindowsAPIPractice\CreateProcess\CreateProcess\obj\Debug\CreateProcess.pdb
+C:\Dev\WindowsAPIPractice\CreateProcess\CreateProcess\bin\Debug\DInvoke.dll
+C:\Dev\WindowsAPIPractice\CreateProcess\CreateProcess\obj\Debug\CreateProcess.csproj.CopyComplete
