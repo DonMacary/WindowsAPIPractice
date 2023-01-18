@@ -1,0 +1,8 @@
+C:\Dev\MessageBox\MessageBox\bin\Release\MessageBox.exe.config
+C:\Dev\MessageBox\MessageBox\bin\Release\MessageBox.exe
+C:\Dev\MessageBox\MessageBox\bin\Release\MessageBox.pdb
+C:\Dev\MessageBox\MessageBox\obj\Release\MessageBox.csproj.AssemblyReference.cache
+C:\Dev\MessageBox\MessageBox\obj\Release\MessageBox.csproj.SuggestedBindingRedirects.cache
+C:\Dev\MessageBox\MessageBox\obj\Release\MessageBox.csproj.CoreCompileInputs.cache
+C:\Dev\MessageBox\MessageBox\obj\Release\MessageBox.exe
+C:\Dev\MessageBox\MessageBox\obj\Release\MessageBox.pdb
