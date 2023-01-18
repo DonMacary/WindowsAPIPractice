@@ -6,3 +6,13 @@ C:\Dev\MessageBox\MessageBox\obj\Debug\MessageBox.csproj.SuggestedBindingRedirec
 C:\Dev\MessageBox\MessageBox\obj\Debug\MessageBox.csproj.CoreCompileInputs.cache
 C:\Dev\MessageBox\MessageBox\obj\Debug\MessageBox.exe
 C:\Dev\MessageBox\MessageBox\obj\Debug\MessageBox.pdb
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\bin\Debug\MessageBox.exe.config
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\bin\Debug\MessageBox.exe
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\bin\Debug\MessageBox.pdb
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\obj\Debug\MessageBox.csproj.AssemblyReference.cache
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\obj\Debug\MessageBox.csproj.SuggestedBindingRedirects.cache
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\obj\Debug\MessageBox.csproj.CoreCompileInputs.cache
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\obj\Debug\MessageBox.exe
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\obj\Debug\MessageBox.pdb
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\bin\Debug\DInvoke.dll
+C:\Dev\WindowsAPIPractice\MessageBox\MessageBox\obj\Debug\MessageBox.csproj.CopyComplete
